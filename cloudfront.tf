@@ -6,7 +6,7 @@ resource "aws_s3_bucket" "b" {
     Name = "My bucket"
   }
 }
-
+#works with s3
 resource "aws_s3_bucket_acl" "b_acl" {
   bucket = aws_s3_bucket.b.id
   acl    = "private"
